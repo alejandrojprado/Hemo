@@ -1,0 +1,22 @@
+__author__ = 'ale'
+import sys
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
+from ventanaLogin import VistaLogin
+
+
+
+def main(argv):
+    app = QApplication(argv, True)
+    wnd = VistaLogin()  # classname
+    wnd.showFullScreen()
+    app.connect(app, SIGNAL("lastWindowClosed()"), app, SLOT("quit()"))
+    sys.exit(app.exec_())
+
+
+
+if __name__ == "__main__":
+    main(sys.argv)
+
+
+
