@@ -34,8 +34,8 @@ class VentanaPrincipal(QMainWindow):
 
     def setupUi(self, MainWindow):
 
-        #self.direccionDeImagenes = "/home/pi/TestHemo1/img/"
-        self.direccionDeImagenes = "/home/ale/PycharmProjects/TestHemo1/img/"
+        self.direccionDeImagenes = "/home/pi/TestHemo1/img/"
+        #self.direccionDeImagenes = "/home/ale/PycharmProjects/TestHemo1/img/"
         self.diccionarioPositivo = []
         self.diccionarioNegativo  = []
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
